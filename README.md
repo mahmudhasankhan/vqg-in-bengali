@@ -76,14 +76,14 @@ To train and test models, you will need to prepare separate datasets in hdf5 fil
 
 ***It is very important that you look in to the `utils` module to better understand what parameters and arguments the code is taking AND structure your project according to that or build an intuition about how the code is working.***
  
-Refer to `store_dataset.py` to clear any confusions on how to build the dataset.
+Refer to `create_dataset.py` to clear any confusions on how to build the dataset.
 
 ```shell
 # Create the vocabulary file.
 python utils/vocab.py
 
 # Create the hdf5 dataset. You'll need to create separate train and validation datasets
-python utils/store_dataset.py
+python utils/create_dataset.py
 
 ```
 
@@ -97,10 +97,10 @@ To train and test the model, run these scripts. The results will be saved in the
 
 ```shell
 # Train the model.
-python train_iq.py
+python train.py
 
 # Test the model.
-python test_iq.py
+python test.py
 ```
 
 ## Results

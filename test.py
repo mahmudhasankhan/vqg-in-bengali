@@ -7,7 +7,7 @@ import pytorch_lightning as pl
 import torch
 from torchvision.transforms import transforms
 
-from train_iq import TrainIQ
+from train import TrainIQ
 from utils.data_loader import get_loader
 
 transform = transforms.Compose(
